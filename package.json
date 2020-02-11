@@ -1,31 +1,7 @@
 {
-	"name": "react-next-landing",
-	"description": "Modern Multipurpose Landing Pages Template Using React, Next, Styled Components and so on. It also support Gatsby Static site generator ",
+	"name": "sangeet-nepal",
+	"description": "a music app",
 	"version": "3.3.0",
-	"private": true,
-	"author": "RedQ Team",
-	"license": "",
-	"repository": {
-		"type": "git",
-		"url": ""
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.5.0",
-		"cpx": "^1.5.0",
-		"cross-env": "^5.2.0",
-		"firebase-tools": "7.0.2",
-		"husky": "^3.0.0",
-		"lerna": "^3.15.0",
-		"lint-staged": "^9.1.0",
-		"prettier": "^1.18.2",
-		"rimraf": "^2.6.3"
-	},
-	"workspaces": [
-		"packages/common",
-		"packages/landing",
-		"packages/landing-gatsby",
-		"packages/reusecore"
-	],
 	"scripts": {
 		"clean": "lerna clean --yes && rimraf node_modules",
 		"start": "lerna run --parallel dev",
@@ -39,6 +15,21 @@
 		"copy-deps": "cpx \"packages/landing/*{package.json,package-lock.json,yarn.lock}\" \"dist/functions\" -C",
 		"install-deps": "cd \"dist/functions\" && yarn"
 	},
+	"devDependencies": {
+		"@babel/cli": "^7.8.4",
+		"cpx": "^1.5.0",
+		"cross-env": "^7.0.0",
+		"husky": "^4.2.1",
+		"lerna": "^3.20.2",
+		"lint-staged": "^10.0.7",
+		"prettier": "^1.19.1",
+		"rimraf": "^3.0.2"
+	},
+	"workspaces": [
+		"packages/common",
+		"packages/landing-gatsby",
+		"packages/reusecore"
+	],
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged"
@@ -49,5 +40,12 @@
 			"prettier --trailing-comma es5 --single-quote --write",
 			"git add"
 		]
+	},
+	"private": true,
+	"author": "Suraj Shrestha",
+	"license": "",
+	"repository": {
+		"type": "git",
+		"url": ""
 	}
 }
