@@ -15,8 +15,7 @@
 		/data
 		/theme
 	/functions
-	/landing [NextJs version of the project]
-	/landing-gatsby [Gatsby version of the project]
+	/landing-gatsby
 ```
 
 ### Stack We Have Used
