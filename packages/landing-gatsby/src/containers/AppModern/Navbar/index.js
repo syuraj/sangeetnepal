@@ -14,7 +14,6 @@ import Container from 'common/src/components/UI/Container';
 import useOnClickOutside from 'common/src/hooks/useOnClickOutside';
 import NavbarWrapper, { MenuArea, MobileMenu, Search } from './navbar.style';
 import LogoImage from 'common/src/assets/image/appModern/logo-white.png';
-import LogoImageAlt from 'common/src/assets/image/appModern/logo.png';
 
 const Navbar = () => {
   const data = useStaticQuery(graphql`
@@ -103,43 +102,18 @@ const Navbar = () => {
     <NavbarWrapper className="navbar">
       <Container>
         <Logo
-          href="/appmodern"
+          href="/"
           logoSrc={LogoImage}
-          title="App Modern"
+          title="Sangeet Nepal"
           className="main-logo"
         />
-        <Logo
-          href="/appmodern"
-          logoSrc={LogoImageAlt}
-          title="App Modern"
-          className="logo-alt"
-        />
-        {/* end of logo */}
 
         <MenuArea className={state.searchToggle ? 'active' : ''}>
           <ScrollSpyMenu className="menu" menuItems={navMenu} offset={-84} />
           {/* end of main menu */}
 
-          <Search className="search" ref={searchRef}>
-            <form onSubmit={handleSearchForm}>
-              <input
-                type="text"
-                value={state.search}
-                placeholder="Enter your keyword"
-                onChange={handleOnChange}
-              />
-            </form>
-            <Button
-              className="text"
-              variant="textButton"
-              icon={<Icon icon={state.searchToggle ? x : search} />}
-              onClick={() => toggleHandler('search')}
-            />
-          </Search>
-          {/* end of search */}
-
           <AnchorLink href="#trail" offset={84}>
-            <Button className="trail" title="Try for Free" />
+            <Button className="trail" title="Download Now" />
           </AnchorLink>
 
           <Button
@@ -181,7 +155,7 @@ const Navbar = () => {
               </li>
             ))}
           </Scrollspy>
-          <Button title="Try for Free" />
+          <Button title="Download Now" />
         </Container>
       </MobileMenu>
       {/* end of mobile menu */}

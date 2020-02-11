@@ -19,18 +19,6 @@ export const navbar = {
       offset: '81',
     },
     {
-      id: 3,
-      label: 'Testimonial',
-      path: '#testimonial',
-      offset: '81',
-    },
-    {
-      id: 4,
-      label: 'Pricing',
-      path: '#pricing',
-      offset: '81',
-    },
-    {
       id: 5,
       label: 'Team Members',
       path: '#team',
