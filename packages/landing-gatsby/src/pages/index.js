@@ -20,7 +20,7 @@ export default function() {
 	return (
 		<ThemeProvider theme={theme}>
 			<>
-				<SEO />
+				<SEO title="Sangeet-Nepal" />
 				<Modal />
 				<ResetCSS />
 				<GlobalStyle />
