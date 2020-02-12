@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Sangeet-Nepal`,
+		title: `Sangeet Nepal`,
 		description: `A Nepali Music App`,
 		author: `@syuraj`
 	},
