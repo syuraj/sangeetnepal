@@ -1,6 +1,5 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import { useStaticQuery, graphql } from 'gatsby'
 import { openModal, closeModal } from '@redq/reuse-modal'
 import Text from 'reusecore/src/elements/Text'
 import Image from 'reusecore/src/elements/Image'
@@ -39,20 +38,6 @@ const ModalContent = () => (
 )
 
 const Banner = () => {
-	const data = useStaticQuery(graphql`
-		query {
-			appModernJson {
-				client {
-					id
-					title
-					image {
-						publicURL
-					}
-				}
-			}
-		}
-	`)
-	const { client } = data.appModernJson
 	// modal handler
 	const handleVideoModal = () => {
 		openModal({
